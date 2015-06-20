@@ -1,17 +1,23 @@
 body {
     font-family: sans-serif;
+    margin: 0;
+    padding: 8px;
 }
 
 header {
-    margin-top: 300px;
+    padding-top: 20%;
+    background: url("img/header.jpg");
     height: 30px;
-    background: red;
+    border: solid #ff66c0 0;
+    width: 100vw;
 }
 
 header ul {
     list-style: none;
     padding: 5px;
     margin: auto;
+    background: #ff0000;
+    text-align: center;
 }
 
 header ul li {
@@ -19,7 +25,7 @@ header ul li {
 }
 
 header ul li:hover {
-    background-color: darkred;
+    background-color: #8b0000;
 }
 
 header ul li a {
@@ -31,40 +37,73 @@ header ul li a {
     padding: 10px 5px;
 }
 
+#main {
+    height: 70vh;
+}
+
 .sidepanel {
     float: left;
-    width: 300px;
+    width: 25%;
+    height: 100%;
     background-color: #6fd6ff;
 }
 
 .sidepanel ul {
-    list-style-image: url(http://prntscr.com/7iatw3);
     padding: 0;
+    list-style-type: none;
 }
 
-.sidepanel ul li{
+.sidepanel ul li {
+    padding: 5px;
+    padding-left: 15px;
+}
 
+.sidepanel ul li ::before {
+    content: " # ";
 }
 
 .sidepanel ul li:hover {
-    background-color: cornflowerblue;
+    background-color: #68a8ed;
+}
+
+.sidepanel ul li a{
+    text-decoration: none;
 }
 
 .content {
     padding-left: 30px;
+    padding-top: 15px;
     float: left;
-    width: 500px;
+    width: 70%;
 }
 
-.content dl:first-of-type dt {
-    color: red;
+.content section dl {
+    padding: 10px;
+    margin: 0;
 }
 
-.content dl dt {
-    color: blue;
+.content section:first-of-type {
+    height: 225px;
+    background: url("img/225.png") no-repeat;
+    padding-left: 230px;
+}
+
+.content section:first-of-type dl {
+    padding-top: 145px;
+}
+
+.content dt {
+    color: #0000ff;
     font-weight: bold;
 }
 
-.content dl {
-    padding: 0
+.content section:first-of-type dt {
+    color: #ff0000;
 }
+
+.content dd {
+    margin-left: 0;
+}
+
+
+
