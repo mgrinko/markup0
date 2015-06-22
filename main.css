@@ -6,7 +6,7 @@ body {
 
 header {
     padding-top: 20%;
-    background: url("img/header.jpg");
+    background: url("img/header.jpg") no-repeat 50% 0;
     height: 30px;
     border: solid #ff66c0 0;
     width: 100vw;
@@ -38,7 +38,7 @@ header ul li a {
 }
 
 #main {
-    height: 70vh;
+
 }
 
 .sidepanel {
@@ -77,32 +77,25 @@ header ul li a {
     width: 70%;
 }
 
-.content section dl {
+.first-section {
     padding: 10px;
     margin: 0;
+    position: relative;
 }
 
-.content section:first-of-type {
-    height: 225px;
-    background: url("img/225.png") no-repeat;
-    padding-left: 230px;
+.first-section .section-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
 }
 
-.content section:first-of-type dl {
-    padding-top: 145px;
-}
-
-.content dt {
+.content h1 {
     color: #0000ff;
-    font-weight: bold;
 }
 
-.content section:first-of-type dt {
+.first-section h3 {
     color: #ff0000;
-}
-
-.content dd {
-    margin-left: 0;
 }
 
 
