@@ -1,51 +1,51 @@
 body {
-    font-family: sans-serif;
+    font: 10px/13px tahoma, sans-serif;
     margin: 0;
-    padding: 8px;
 }
 
-header {
-    padding-top: 20%;
-    background: url("img/header.jpg") no-repeat 50% 0;
-    height: 30px;
-    border: solid #ff66c0 0;
-    width: 100vw;
+img {
+    vertical-align: top;
+}
+
+#main {
+    background: url("img/main-bg.gif") no-repeat;
+    width: 770px;
+    margin: 0 auto
 }
 
 header ul {
     list-style: none;
-    padding: 5px;
-    margin: auto;
-    background: #ff0000;
+    margin: 0;
+    padding: 0;
+    background: url("img/header-list-bg.gif") no-repeat 50% 0;
     text-align: center;
+    font: 12px/19px tahoma, sans-serif;
 }
 
 header ul li {
     display: inline-block;
+    vertical-align: top;
+    padding: 6px 5px;
 }
 
-header ul li:hover {
-    background-color: #8b0000;
+header ul li a:hover {
+    color: #ffcccc;
 }
 
 header ul li a {
-    display: inline;
-    list-style: none;
+    display: block;
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px 5px;
 }
 
-#main {
-
-}
 
 .sidepanel {
     float: left;
-    width: 25%;
+    width: 194px;
     height: 100%;
-    background-color: #6fd6ff;
+    background: url("img/sidepanel.gif");
+    margin-left: 6px;
 }
 
 .sidepanel ul {
@@ -54,7 +54,7 @@ header ul li a {
 }
 
 .sidepanel ul li {
-    padding: 5px;
+    vertical-align: top;
     padding-left: 15px;
 }
 
@@ -63,39 +63,47 @@ header ul li a {
 }
 
 .sidepanel ul li:hover {
-    background-color: #68a8ed;
+    background: url("img/sidepanel-selected-option.gif") no-repeat 50% 0;
 }
 
-.sidepanel ul li a{
+.sidepanel ul li a {
     text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
 }
 
 .content {
-    padding-left: 30px;
-    padding-top: 15px;
+    padding-left: 33px;
+    padding-top: 18px;
     float: left;
-    width: 70%;
+    width: 537px;
 }
 
 .first-section {
-    padding: 10px;
     margin: 0;
     position: relative;
+    background: url("img/main-section-bg.jpg") 100% 0;
 }
 
 .first-section .section-content {
+    padding-left: 9px;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 400px;
+    width: 314px;
 }
 
 .content h1 {
-    color: #0000ff;
+    color: #003399;
+}
+
+.regular-content {
+    padding: 2px;
 }
 
 .first-section h3 {
-    color: #ff0000;
+    color: #cc3333;
 }
 
 
