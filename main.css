@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
-    font: 10px/13px tahoma, sans-serif;
+    font: 10px tahoma, sans-serif;
     margin: 0;
 }
 
@@ -7,10 +13,15 @@ img {
     vertical-align: top;
 }
 
-#main {
+#page {
     background: url("img/main-bg.gif") no-repeat;
     width: 770px;
-    margin: 0 auto
+    margin: 0 auto;
+}
+
+header {
+    background: url('img/header.jpg') no-repeat;
+    padding-top: 126px;
 }
 
 header ul {
@@ -19,23 +30,23 @@ header ul {
     padding: 0;
     background: url("img/header-list-bg.gif") no-repeat 50% 0;
     text-align: center;
-    font: 12px/19px tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 header ul li {
     display: inline-block;
-    vertical-align: top;
     padding: 6px 5px;
 }
 
-header ul li a:hover {
+header ul a:hover {
     color: #ffcccc;
 }
 
-header ul li a {
-    display: block;
+header ul a {
     color: #ffffff;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -43,9 +54,14 @@ header ul li a {
     clear: both;
 }
 
-.wrap {
+#main {
     background: url("img/sidepanel.gif") repeat-y;
+}
 
+#main::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .sidepanel {
@@ -60,55 +76,66 @@ header ul li a {
     list-style: none;
 }
 
-.sidepanel li {
-    vertical-align: top;
-    background: url("img/sidepanel-option.gif") no-repeat;
-    padding-left: 34px;
-}
-
-.sidepanel li:hover {
-    background: url("img/sidepanel-option-selected.gif") no-repeat;
-}
-
 .sidepanel li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
     line-height: 25px;
+    display: block;
+    background: url("img/sidepanel-option.gif") no-repeat;
+    padding-left: 34px;
+}
+
+.sidepanel li a:hover {
+    background: url("img/sidepanel-option-selected.gif") no-repeat;
 }
 
 .content {
-    padding-left: 33px;
     padding-top: 18px;
-    float: left;
+    float: right;
     width: 537px;
 }
 
+h1 {
+    color: #003399;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+
+h3 {
+    color: #cc3333;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.first-section p {
+    font-size: 10px;
+    margin-bottom: 9px;
+}
+
+.main-section p {
+    font-size: 10px;
+    margin-bottom: 14px;
+}
+
 .first-section {
-    margin: 0;
     position: relative;
     background: url("img/main-section-bg.jpg") 100% 0;
 }
 
 .first-section .section-content {
-    padding-left: 9px;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 314px;
 }
 
-.content h1 {
-    color: #003399;
-}
-
-.regular-content {
+.main-section .section-content {
     padding: 2px;
 }
 
-.first-section h3 {
-    color: #cc3333;
+section {
+    margin-bottom: 18px;
 }
-
-
-
